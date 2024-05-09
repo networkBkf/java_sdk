@@ -1,0 +1,21 @@
+#spring:
+#  application:
+#    name: sdk
+#  pulsar:
+#    client:
+#      service-url: pulsar://172.31.164.82:6650
+#    defaults:
+#      type-mappings:
+#        - message-type: com.example.sdk.pulsar.User
+#          schema-info:
+#            schema-type: JSON
+server:
+  port: 6666
+
+curator:
+  retryCount: 5
+  elapsedTimeMs: 5000
+  connectString: 172.31.164.82:2182
+  sessionTimeoutMs: 60000
+  connectionTimeoutMs: 5000
+
